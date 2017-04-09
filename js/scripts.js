@@ -26,7 +26,7 @@ $(document).ready(function() {
 
         // ----------------------------
 
-        getDiscountSize();
+        // getDiscountSize();
 
     });
 
@@ -60,7 +60,7 @@ $(document).ready(function() {
 
         });
 
-        getDiscountSize();
+        // getDiscountSize();
 
     });
 
@@ -92,37 +92,37 @@ $(document).ready(function() {
     // ---------------------------
 
 
-    function getDiscountSize() {
+    // function getDiscountSize() {
 
-        slideIndex = 0;
+    //     slideIndex = 0;
 
-        slideCount = $(".slide-discount").length - 1;
+    //     slideCount = $(".slide-discount").length - 1;
 
-        for( slideIndex = 0; slideIndex <= slideCount; slideIndex++ ) {
+    //     for( slideIndex = 0; slideIndex <= slideCount; slideIndex++ ) {
 
-            if( $(".slide-discount:eq("+ slideIndex +")").width() > $(".slide-discount:eq("+ slideIndex +")").height()) {
+    //         if( $(".slide-discount:eq("+ slideIndex +")").width() > $(".slide-discount:eq("+ slideIndex +")").height()) {
 
-                $(".slide-discount:eq("+ slideIndex +")").css({
-                    "width" : $(".slide-discount:eq("+ slideIndex +")").outerWidth() + "px",
-                    "height" : $(".slide-discount:eq("+ slideIndex +")").outerWidth() + "px"
-                });
+    //             $(".slide-discount:eq("+ slideIndex +")").css({
+    //                 "width" : $(".slide-discount:eq("+ slideIndex +")").outerWidth() + "px",
+    //                 "height" : $(".slide-discount:eq("+ slideIndex +")").outerWidth() + "px"
+    //             });
 
-            } else if( $(".slide-discount:eq("+ slideIndex +")").width() <  $(".slide-discount:eq("+ slideIndex +")").height() ) {
+    //         } else if( $(".slide-discount:eq("+ slideIndex +")").width() <  $(".slide-discount:eq("+ slideIndex +")").height() ) {
 
-                $(".slide-discount:eq("+ slideIndex +")").css({
-                    "width" : $(".slide-discount:eq("+ slideIndex +")").outerHeight() + "px",
-                    "height" : $(".slide-discount:eq("+ slideIndex +")").outerHeight() + "px"
-                });
+    //             $(".slide-discount:eq("+ slideIndex +")").css({
+    //                 "width" : $(".slide-discount:eq("+ slideIndex +")").outerHeight() + "px",
+    //                 "height" : $(".slide-discount:eq("+ slideIndex +")").outerHeight() + "px"
+    //             });
 
-            }
+    //         }
 
-            $(".slide-discount:eq("+ slideIndex +") p").css({
-                "height" : $(".slide-discount:eq("+ slideIndex +")").height() + "px"
-            });
+    //         $(".slide-discount:eq("+ slideIndex +") p").css({
+    //             "height" : $(".slide-discount:eq("+ slideIndex +")").height() + "px"
+    //         });
 
-        }
+    //     }
 
-    }
+    // }
 
 
 });
