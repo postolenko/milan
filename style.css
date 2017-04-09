@@ -1673,7 +1673,15 @@ section.promo-section {
 }
 
 .good-thumbnail .green-btn {
-    margin: 14px 0 7px 0;
+    display: block;
+/*    display: inline-block;
+    vertical-align: top;*/
+    margin: 14px auto 7px auto;
+    /*padding: 6px 5px 3px 5px;*/
+}
+
+.good-thumbnail p.green-btn {
+    padding: 6px 5px 3px 5px;
 }
 
 .good-thumbnail:hover {
