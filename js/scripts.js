@@ -85,7 +85,7 @@ $(document).ready(function() {
             "min-height" : slideImgHeight + "px"
         });
 
-        $(".photo_img_box img").offset({ left:leftCoor, top:topCoor });
+        $(".photo_img_box img").offset({ left:leftCoor});
 
     });
 
