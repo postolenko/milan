@@ -59,8 +59,6 @@ $(document).ready(function() {
 
         slideCount = $(".slide-discount").length - 1;
 
-        // console.log(slideIndex +"   "+ slideCount);
-
         for( slideIndex = 0; slideIndex <= slideCount; slideIndex++ ) {
 
             if( $(".slide-discount:eq("+ slideIndex +")").width() > $(".slide-discount:eq("+ slideIndex +")").height()) {
@@ -70,16 +68,12 @@ $(document).ready(function() {
                     "height" : $(".slide-discount:eq("+ slideIndex +")").outerWidth() + "px"
                 });
 
-                // console.log(slideIndex +"   "+ slideCount);
-
             } else if( $(".slide-discount:eq("+ slideIndex +")").width() <  $(".slide-discount:eq("+ slideIndex +")").height() ) {
 
                 $(".slide-discount:eq("+ slideIndex +")").css({
                     "width" : $(".slide-discount:eq("+ slideIndex +")").outerHeight() + "px",
                     "height" : $(".slide-discount:eq("+ slideIndex +")").outerHeight() + "px"
-                });               
-
-                // console.log(slideIndex +"   "+ slideCount);
+                });
 
             }
 
