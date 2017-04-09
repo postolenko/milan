@@ -4,6 +4,18 @@ $(document).ready(function() {
     var slideIndex = 0;
     var slideCount = $(".slide-discount").length - 1;
 
+    // -----------------------------------------------
+
+    var slidePhoto;
+    var coorsSlidePhoto;
+    var topCoor;
+    var leftCoor;
+    var rightCoor;
+    var bottomCoor;
+    var slideImgWidth;
+    var slideImgHeight;
+
+    // -----------------------------------------------
 
     $(window).resize(function() {
 
@@ -51,6 +63,33 @@ $(document).ready(function() {
         getDiscountSize();
 
     });
+
+    // ---------------------------
+
+    $(function() {
+
+        slidePhoto = document.getElementsByClassName("photo_img_box")[0];
+
+        coorsSlidePhoto = slidePhoto.getBoundingClientRect();
+
+        topCoor = coorsSlidePhoto.top;
+        leftCoor = coorsSlidePhoto.left;
+        rightCoor = coorsSlidePhoto.right;
+        bottomCoor = coorsSlidePhoto.bottom;
+
+        slideImgWidth = rightCoor - leftCoor;
+        slideImgHeight = bottomCoor - topCoor;
+
+        $(".photo_img_box img").css({
+            "min-width" : slideImgWidth + "px",
+            "min-height" : slideImgHeight + "px"
+        });
+
+        $(".photo_img_box img").offset({ left:leftCoor, top:topCoor });
+
+    });
+
+    // ---------------------------
 
 
     function getDiscountSize() {
