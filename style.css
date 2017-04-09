@@ -288,29 +288,27 @@ a {
     line-height: 16px;
     font-weight: 400;
     color: #373940;
-    margin: 0 4px;
     padding: 3px 0;
     text-decoration: none;
     outline: none;
-    border-bottom: 1px dotted transparent;
 
-    -webkit-transition-property: color, border-bottom;
+    -webkit-transition-property: color;
     -webkit-transition-duration: .3s;
     -webkit-transition-timing-function: ease;
 
-    -moz-transition-property: color, border-bottom;
+    -moz-transition-property: color;
     -moz-transition-duration: .3s;
     -moz-transition-timing-function: ease;
 
-    -ms-transition-property: color, border-bottom;
+    -ms-transition-property: color;
     -ms-transition-duration: .3s;
     -ms-transition-timing-function: ease;
 
-    -o-transition-property: color, border-bottom;
+    -o-transition-property: color;
     -o-transition-duration: .3s;
     -o-transition-timing-function: ease;
 
-    transition-property: color, border-bottom;
+    transition-property: color;
     transition-duration: .3s;
     transition-timing-function: ease;
 }
@@ -318,20 +316,17 @@ a {
 a:link,
 a:visited {
     color: #373940;
-    border-bottom: 1px dotted transparent;
 }
 
 a.active,
 a:active {
-    color: #373940;
-    border-bottom: 1px dotted #00b500;
+    color: #00b500;
 }
 
 a:hover {
     color: #00b500;
-    border-bottom: 1px dotted #00b500;
-}*/
-
+}
+*/
 img {
     outline: none;
     border: 0 solid transparent;
@@ -479,6 +474,8 @@ a:active {
     opacity: 1;
 }
 
+a.white-btn,
+button.white-btn,
 .white-btn {
     /*display: block;*/
     display: inline-block;
@@ -503,6 +500,8 @@ a:active {
     background-size: cover;
 }
 
+a.white-btn,
+button.white-btn,
 .white-btn:hover {
     color: #ffffff;
 }
@@ -1674,10 +1673,7 @@ section.promo-section {
 
 .good-thumbnail .green-btn {
     display: block;
-/*    display: inline-block;
-    vertical-align: top;*/
     margin: 14px auto 7px auto;
-    /*padding: 6px 5px 3px 5px;*/
 }
 
 .good-thumbnail p.green-btn {
@@ -1691,7 +1687,7 @@ section.promo-section {
 .good-thumbnail:hover .inner-block {
     width: 150%;
     position: absolute;
-    top: -85px;
+    top: -95px;
     left: -25%;
     padding: 20px 20px 0 20px;
     -webkit-box-shadow: 0px 0px 7px 0px rgba(0,0,0,0.4);
