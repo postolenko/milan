@@ -17,6 +17,12 @@ $(document).ready(function() {
 
     // -----------------------------------------------
 
+    var goodCartIndex;
+    var goodCartTopRowHeight;
+    var goodCartContentBlockHeight;
+
+    // -----------------------------------------------
+
     $(window).resize(function() {
 
 
@@ -70,26 +76,92 @@ $(document).ready(function() {
 
         slidePhoto = document.getElementsByClassName("photo_img_box")[0];
 
-        coorsSlidePhoto = slidePhoto.getBoundingClientRect();
+        if(slidePhoto) {
 
-        topCoor = coorsSlidePhoto.top;
-        leftCoor = coorsSlidePhoto.left;
-        rightCoor = coorsSlidePhoto.right;
-        bottomCoor = coorsSlidePhoto.bottom;
+            coorsSlidePhoto = slidePhoto.getBoundingClientRect();
 
-        slideImgWidth = rightCoor - leftCoor;
-        slideImgHeight = bottomCoor - topCoor;
+            topCoor = coorsSlidePhoto.top;
+            leftCoor = coorsSlidePhoto.left;
+            rightCoor = coorsSlidePhoto.right;
+            bottomCoor = coorsSlidePhoto.bottom;
 
-        $(".photo_img_box img").css({
-            "min-width" : slideImgWidth + "px",
-            "min-height" : slideImgHeight + "px"
-        });
+            slideImgWidth = rightCoor - leftCoor;
+            slideImgHeight = bottomCoor - topCoor;
 
-        $(".photo_img_box img").offset({ left:leftCoor});
+            $(".photo_img_box img").css({
+                "min-width" : slideImgWidth + "px",
+                "min-height" : slideImgHeight + "px"
+            });
+
+            $(".photo_img_box img").offset({ left:leftCoor});
+
+        }
 
     });
 
-    // ---------------------------
+    // ----------------------------------------------------------------
+
+    $(function() {
+
+        // var goodCartIndex;
+        // var goodCartTopRowHeight;
+        // var goodCartContentBlockHeight;
+
+        $(".good-cart").bind({
+          mouseenter: function() {
+
+            goodCartIndex = $(".good-cart").index(this);
+
+            goodCartTopRowHeight = $( this ).height();
+            goodCartContentBlockHeight = $(".content-block:eq("+ goodCartIndex +")").height();
+
+            $(this).prepend("<div class='for_coor'></div>");
+
+            $(".for_coor").height( goodCartTopRowHeight + goodCartContentBlockHeight );
+
+          },
+          mouseleave: function() {
+
+            $(".for_coor").remove();
+
+          }
+        });
+
+    });
+
+    // ----------------------------------------------------------------
+
+        $(function() {
+
+            $(".count-goods button").click(function() {
+
+                countElementsInputIndex = $(this).parent(".count-goods").index(".count-goods");
+
+                countElementsVal = $(".count-goods:eq("+ countElementsInputIndex +") .count-val").val();
+
+                if( countElementsVal <=  -1 ) {
+
+                    $(".count-val:eq("+ countElementsInputIndex +")").val(0);
+
+                }
+
+                if( $(this).hasClass("minus") && countElementsVal > 0 ) {
+
+                    countElementsVal--;
+
+                } else if( $(this).hasClass("plus") ) {
+
+                    countElementsVal++;
+
+                }
+
+                $(".count-goods:eq("+ countElementsInputIndex +") .count-val").val(countElementsVal);
+
+            });
+
+        });
+
+    // ---------------------------------------------------------------
 
 
     // function getDiscountSize() {
