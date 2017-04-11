@@ -284,6 +284,16 @@ header h3 {
     line-height: 32px
 }
 
+h5 {
+    font-family: "PT Serif", Arial, Verdana, serif;
+    font-size: 18px;
+    line-height: 24px;
+    font-weight: 400;
+    font-style: italic;
+    color: #00b500;
+    padding: 3px 0;
+}
+
 p {
     font-family: "PT Serif", Arial, Verdana, serif;
     font-size: 16px;
@@ -391,6 +401,43 @@ input[type=checkbox] + label:before {
 
 input[type=checkbox]:checked + label:before {
     background-position: 0 -26px;
+}
+
+input[type=radio] {
+    width: 1px;
+    height: 1px;
+    z-index: -1;
+    opacity: 0;
+}
+
+input[type=radio] + label {
+    display: inline-block;
+    vertical-align: top;
+    position: relative;
+    font-family: "PT Serif", Arial, Verdana, serif;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 400;
+    color: #373940;
+    padding: 0 0 0 25px;
+}
+
+input[type=radio] + label:before {
+    display: block;
+    content: "";
+    width: 14px;
+    height: 15px;
+    position: absolute;
+    top: 5px;
+    left: 0;
+    background-color: transparent;
+    background-image: url(img/radio_btn_sprite.png);
+    background-repeat: no-repeat;
+    background-position: 0 -24px;
+}
+
+input[type=radio]:checked + label:before {
+    background-position: 0 1px;
 }
 
 
@@ -621,6 +668,7 @@ button.white-btn,
     width: 80px;
     height: 20px;
     position: relative;
+    z-index: 2;
     background-image: url(img/discount_ribbon_red.png);
     background-repeat: no-repeat;
     background-position: center;
@@ -2429,6 +2477,243 @@ section.promo-section {
 
  
 /*-- /Ваш Блокнот --*/
+
+/*-- Каталог --*/
+
+
+.coice-sect {
+    padding: 10px 0;
+}
+
+.coice-sect .coice-block {
+    display: inline-block;
+    vertical-align: top;
+    width: 33.33%;
+    padding: 15px 0;
+}
+
+.coice-block .checkbox-block {
+    padding: 2px 0;
+}
+
+.more-link {
+    display: inline-block;
+    vertical-align: top;
+    cursor: pointer;
+    border: 1px solid transparent;
+    background: transparent;
+    font-family: "PT Serif", Arial, Verdana, serif;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 400;
+    color: #00b500;
+
+    -webkit-transition-property: color;
+    -webkit-transition-duration: .3s;
+    -webkit-transition-timing-function: ease;
+
+    -moz-transition-property: color;
+    -moz-transition-duration: .3s;
+    -moz-transition-timing-function: ease;
+
+    -ms-transition-property: color;
+    -ms-transition-duration: .3s;
+    -ms-transition-timing-function: ease;
+
+    -o-transition-property: color;
+    -o-transition-duration: .3s;
+    -o-transition-timing-function: ease;
+
+    transition-property: color;
+    transition-duration: .3s;
+    transition-timing-function: ease;
+}
+
+.more-link:link,
+.more-link:visited {
+    color: #00b500;
+}
+
+.more-link:active,
+.more-link.active {
+    color: #c60000;
+}
+
+.more-link:hover {
+    color: #c60000;
+}
+
+.catalog-thumbnails {
+    /*margin: 10px 0;*/
+}
+
+.catalog-thumbnails .good-thumbnail {
+    width: 33.33%;
+    margin: 3px 0;
+}
+
+.catalog-thumbnails .good-thumbnail .inner-block {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: auto;
+    padding: 20px 20px 5px 20px;
+    -webkit-box-shadow: 0px 4px 19px 4px rgba(0, 0, 0, .1);
+    -moz-box-shadow: 0px 4px 19px 4px rgba(0, 0, 0, .1);
+    box-shadow: 0px 4px 19px 4px rgba(0, 0, 0, .1);
+
+    -webkit-transition-property: box-shadow;
+    -webkit-transition-duration: .3s;
+    -webkit-transition-timing-function: ease;
+
+    -moz-transition-property: box-shadow;
+    -moz-transition-duration: .3s;
+    -moz-transition-timing-function: ease;
+
+    -ms-transition-property: box-shadow;
+    -ms-transition-duration: .3s;
+    -ms-transition-timing-function: ease;
+
+    -o-transition-property: box-shadow;
+    -o-transition-duration: .3s;
+    -o-transition-timing-function: ease;
+
+    transition-property: box-shadow;
+    transition-duration: .3s;
+    transition-timing-function: ease;
+}
+
+.catalog-thumbnails .good-thumbnail:hover .inner-block {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: auto;
+    padding: 20px 20px 5px 20px;
+    -webkit-box-shadow: 0px 4px 23px 4px rgba(0, 0, 0, .2);
+    -moz-box-shadow: 0px 4px 23px 4px rgba(0, 0, 0, .2);
+    box-shadow: 0px 4px 23px 4px rgba(0, 0, 0, .2);
+}
+
+.catalog-thumbnails .good-thumbnail .good-header {
+    position: relative;
+    top: 0;
+}
+
+.catalog-thumbnails .good-thumbnail .good-header .articlum {
+    display: inline-block;
+    vertical-align: baseline;
+}
+
+.catalog-thumbnails .good-thumbnail .img-box {
+    height: 166px;
+    overflow: hidden;
+}
+
+.catalog-thumbnails .good-thumbnail img {
+    -webkit-transition-property: transform;
+    -webkit-transition-duration: .8s;
+    -webkit-transition-timing-function: ease;
+
+    -moz-transition-property: transform;
+    -moz-transition-duration: .8s;
+    -moz-transition-timing-function: ease;
+
+    -ms-transition-property: transform;
+    -ms-transition-duration: .8s;
+    -ms-transition-timing-function: ease;
+
+    -o-transition-property: transform;
+    -o-transition-duration: .8s;
+    -o-transition-timing-function: ease;
+
+    transition-property: transform;
+    transition-duration: .8s;
+    transition-timing-function: ease;
+}
+
+.catalog-thumbnails .good-thumbnail:hover img {
+    -webkit-transform: scale(1.05);
+    -moz-transform: scale(1.05);
+    -o-transform: scale(1.05);
+    transform: scale(1.05);
+}
+
+.catalog-thumbnails .good-thumbnail .bottom-block {
+    display: block;
+}
+
+.pagination-block {
+
+}
+
+.pagination {
+    text-align: center;
+    margin: 40px 0 5px 0;
+}
+
+.pagination li {
+    display: inline-block;
+    vertical-align: top;
+    padding: 5px 10px;
+    font-family: "PT Serif", Arial, Verdana, serif;
+    font-size: 26px;
+    line-height: 26px;
+    font-weight: 400;
+    color: #00b500;
+}
+
+.pagination li a {
+    font-family: "PT Serif", Arial, Verdana, serif;
+    font-size: 26px;
+    line-height: 26px;
+    font-weight: 400;
+    color: #00b500;
+
+    -webkit-transition-property: color;
+    -webkit-transition-duration: .3s;
+    -webkit-transition-timing-function: ease;
+
+    -moz-transition-property: color;
+    -moz-transition-duration: .3s;
+    -moz-transition-timing-function: ease;
+
+    -ms-transition-property: color;
+    -ms-transition-duration: .3s;
+    -ms-transition-timing-function: ease;
+
+    -o-transition-property: color;
+    -o-transition-duration: .3s;
+    -o-transition-timing-function: ease;
+
+    transition-property: color;
+    transition-duration: .3s;
+    transition-timing-function: ease;
+}
+
+.pagination li a:link,
+.pagination li a:visited {
+    color: #00b500;
+}
+
+.pagination li a.active,
+.pagination li a:active {
+    color: #373940;
+}
+
+.pagination li a:hover {
+    color: #373940;
+}
+ 
+/*-- /Каталог --*/
+
+.catalog-empty {
+    padding: 30px 0;
+    margin: 20px 0 80px 0;
+}
+
+.catalog-empty:after {
+    display: none;
+}
 
 /*-------------------------------------------*/
 /* ----- FOOTER ------ */
