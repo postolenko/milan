@@ -2924,23 +2924,23 @@ section.promo-section {
     min-width: 100%;
 
     -webkit-transition-property: transform;
-    -webkit-transition-duration: 13s;
+    -webkit-transition-duration: 14s;
     -webkit-transition-timing-function: ease;
 
     -moz-transition-property: transform;
-    -moz-transition-duration: 13s;
+    -moz-transition-duration: 14s;
     -moz-transition-timing-function: ease;
 
     -ms-transition-property: transform;
-    -ms-transition-duration: 13s;
+    -ms-transition-duration: 14s;
     -ms-transition-timing-function: ease;
 
     -o-transition-property: transform;
-    -o-transition-duration: 13s;
+    -o-transition-duration: 14s;
     -o-transition-timing-function: ease;
 
     transition-property: transform;
-    transition-duration: 13s;
+    transition-duration: 14s;
     transition-timing-function: ease;
 }
 
