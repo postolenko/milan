@@ -17,9 +17,20 @@ $(document).ready(function() {
 
     // -----------------------------------------------
 
-    var goodCartIndex;
-    var goodCartTopRowHeight;
-    var goodCartContentBlockHeight;
+    // var goodCartIndex;
+    // var goodCartTopRowHeight;
+    // var goodCartContentBlockHeight;
+
+    // -----------------------------------------------
+
+    var indexCoiceBox;
+    var coiseBoxCount = $(".coice-box").length - 1;
+    var coiceBoxActive;
+    var coiceBoxHeight;
+    var coiceBoxHoverHeight;
+    var visibleItems;
+    var coiceBoxTopCoor;
+    var coiceTopCoor;
 
     // -----------------------------------------------
 
@@ -31,6 +42,8 @@ $(document).ready(function() {
         $(".wrapper").css({"padding-bottom" :  $(".footer").outerHeight(true) + "px"});
 
         // ----------------------------
+
+        getCoiceBoxHoverHeight(indexCoiceBox, coiseBoxCount);
 
         // getDiscountSize();
 
@@ -103,31 +116,44 @@ $(document).ready(function() {
 
     $(function() {
 
-        // var goodCartIndex;
-        // var goodCartTopRowHeight;
-        // var goodCartContentBlockHeight;
+        // var indexCoiceBox = 0;
+        // var coiseBoxCount = $(".coice-box").length - 1;
+        // var coiceBoxActive;
+        // var coiceBoxHeight;
+        // var coiceBoxHoverHeight;
+        // var visibleItems;
+        // var coiceBoxTopCoor;
+        // var coiceTopCoor;
 
-        $(".good-cart").bind({
-          mouseenter: function() {
+        getCoiceBoxHoverHeight(indexCoiceBox, coiseBoxCount);
 
-            goodCartIndex = $(".good-cart").index(this);
+        $(".more-link").click(function() {
 
-            goodCartTopRowHeight = $( this ).height();
-            goodCartContentBlockHeight = $(".content-block:eq("+ goodCartIndex +")").height();
+            coiceBoxActive = $(this).prev($(".coice-box"));
 
-            $(this).prepend("<div class='for_coor'></div>");
+            coiceBoxHeight = coiceBoxActive.children($(".hover-block")).height();
 
-            $(".for_coor").height( goodCartTopRowHeight + goodCartContentBlockHeight );
+            coiceBoxHoverHeight = parseInt( coiceBoxActive.attr("data-hover-height") );
 
-          },
-          mouseleave: function() {
+            if( coiceBoxActive.height() > coiceBoxHoverHeight ) {
 
-            $(".for_coor").remove();
+                coiceBoxActive.animate({"height" : coiceBoxHoverHeight + "px"}, 500);
 
-          }
+                $(this).text("Еще");
+
+            } else {
+
+                coiceBoxActive.animate({"height" : coiceBoxHeight + "px"}, 500);
+
+                $(this).text("Скрыть");
+
+            }
+
         });
 
+         
     });
+
 
     // ----------------------------------------------------------------
 
@@ -160,6 +186,33 @@ $(document).ready(function() {
             });
 
         });
+
+    // ---------------------------------------------------------------
+
+    function getCoiceBoxHoverHeight(indexCoiceBox, coiseBoxCount) {
+
+        indexCoiceBox = 0;
+
+        for (indexCoiceBox = 0; indexCoiceBox <= coiseBoxCount; indexCoiceBox++) {
+
+            visibleItems = parseInt( $(".coice-box:eq("+ indexCoiceBox +")").attr("data-visible-items") );
+
+            if(visibleItems) {
+
+                coiceBoxTopCoor = $(".coice-box:eq("+ indexCoiceBox +")").offset().top;
+                coiceTopCoor = $(".coice-box:eq("+ indexCoiceBox +") .checkbox-block:eq("+ visibleItems +")").offset().top;
+
+                coiceBoxHoverHeight = coiceTopCoor - coiceBoxTopCoor;
+
+                $(".coice-box:eq("+ indexCoiceBox +")").attr("data-hover-height", coiceBoxHoverHeight);
+
+                $(".coice-box:eq("+ indexCoiceBox +")").css({"height" : coiceBoxHoverHeight + "px"});
+
+            }
+
+        }
+
+    }
 
     // ---------------------------------------------------------------
 
