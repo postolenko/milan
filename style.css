@@ -191,8 +191,17 @@ h1 {
 
 }
 
-
 h2 {
+    font-family: "PT Serif", Arial, Verdana, serif;
+    font-size: 18px;
+    line-height: 25px;
+    font-weight: normal;
+    font-style: italic;
+    color: #00b500;
+    padding: 24px 0 0 0;
+}
+
+header h2 {
     font-family: "Oranienbaum", Arial, Verdana, serif;
     font-size: 36px;
     line-height: 60px;
@@ -201,7 +210,7 @@ h2 {
     text-align: center;
 }
 
-h2:before {
+header h2:before {
     display: inline-block;
     vertical-align: middle;
     content: "";
@@ -211,7 +220,7 @@ h2:before {
     background: rgba(0, 181, 0, 1);
 }
 
-h2:after {
+header h2:after {
     display: inline-block;
     vertical-align: middle;
     content: "";
@@ -262,6 +271,7 @@ header.main-h h2 {
     font-size: 60px;
     line-height: 60px;
     font-weight: normal;
+    font-style: normal;
     color: #373940;
     text-align: center;
     padding: 0;
@@ -301,6 +311,47 @@ p {
     font-weight: 400;
     color: #373940;
     padding: 12px 0;
+}
+
+ol {
+    padding: 8px 0 10px 0;
+}
+
+ol li {
+    display: table;
+    width: 100%;
+    font-family: "PT Serif", Arial, Verdana, serif;
+    font-size: 16px;
+    line-height: 22px;
+    font-weight: 400;
+    color: #373940;
+    padding: 3px 0;
+}
+
+ol li:before {
+    display: table-cell;
+    vertical-align: top;
+    content: "";
+    width: 22px;
+    background-image: url(img/checkout_icon.png);
+    background-position: 3px 6px;
+    background-repeat: no-repeat;
+}
+
+ol.num-mark li:before {
+    display: none;
+}
+
+ol.num-mark li span.num-item {
+    display: table-cell;
+    vertical-align: top;
+    content: "";
+    width: 22px;
+    font-family: "PT Serif", Arial, Verdana, serif;
+    font-size: 16px;
+    line-height: 22px;
+    font-weight: 700;
+    color: #c60000;
 }
 
 li {
@@ -1995,7 +2046,7 @@ section.promo-section {
 }
 
 .factory-thumbnails {
-
+    margin: 0 0 50px 0;
 }
 
 .factory-thumbnail {

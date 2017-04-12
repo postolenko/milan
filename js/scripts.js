@@ -189,6 +189,34 @@ $(document).ready(function() {
 
     // ---------------------------------------------------------------
 
+    $(function() {
+
+        $("ol.num-mark li").prepend("<span class='num-item'></span>");
+
+        var countNumMarkLists = $("ol.num-mark").length - 1;
+
+        var markNumListsIndex;
+
+        var markNumListsItemIndex;
+
+        var countNumItemsList;
+
+        for( markNumListsItemIndex = 0; markNumListsItemIndex <= countNumMarkLists; markNumListsItemIndex++ ) {
+
+            countNumItemsList = $("ol.num-mark:eq("+ markNumListsItemIndex +") li").length - 1;
+
+            for( markListsItemIndex = 0; markListsItemIndex <= countNumItemsList; markListsItemIndex++) {
+
+                $("ol.num-mark:eq("+ markNumListsItemIndex +") li:eq("+ markListsItemIndex +") .num-item").text( (markListsItemIndex + 1 ) );
+
+            }
+
+        }
+
+    });
+
+    // --------------------------------------------------------------
+
     function getCoiceBoxHoverHeight(indexCoiceBox, coiseBoxCount) {
 
         indexCoiceBox = 0;
