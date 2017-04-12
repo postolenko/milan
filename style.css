@@ -2924,31 +2924,31 @@ section.promo-section {
     min-width: 100%;
 
     -webkit-transition-property: transform;
-    -webkit-transition-duration: 14s;
+    -webkit-transition-duration: 15s;
     -webkit-transition-timing-function: ease;
 
     -moz-transition-property: transform;
-    -moz-transition-duration: 14s;
+    -moz-transition-duration: 15s;
     -moz-transition-timing-function: ease;
 
     -ms-transition-property: transform;
-    -ms-transition-duration: 14s;
+    -ms-transition-duration: 15s;
     -ms-transition-timing-function: ease;
 
     -o-transition-property: transform;
-    -o-transition-duration: 14s;
+    -o-transition-duration: 15s;
     -o-transition-timing-function: ease;
 
     transition-property: transform;
-    transition-duration: 14s;
+    transition-duration: 15s;
     transition-timing-function: ease;
 }
 
 .photo-border .img-box img:hover {
-    -webkit-transform: scale(1.4);
-    -moz-transform: scale(1.4);
-    -o-transform: scale(1.4);
-    transform: scale(1.4);
+    -webkit-transform: scale(1.2);
+    -moz-transform: scale(1.2);
+    -o-transform: scale(1.2);
+    transform: scale(1.2);
 }
 
 .two-cols-photo-block p {
