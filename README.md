@@ -6,3 +6,4 @@
 # http://postolenko.github.io/milan/factories.html
 # http://postolenko.github.io/milan/about.html
 # http://postolenko.github.io/milan/contacts.html
+# http://postolenko.github.io/milan/product.html
