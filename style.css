@@ -1506,7 +1506,7 @@ section.promo-section {
     position: relative;
 }
 
-.catalog-nav-box:after {
+.catalog-nav-box.main-page:after {
     display: block;
     content: "";
     width: 90%;
@@ -1702,10 +1702,14 @@ section.promo-section {
 /*-- Bargain Section - Main Page Section 3 --*/
 
 .goods-thumbnails {
-
+    border-top: 1px solid #ebe7e5;
 }
 
-.goods-thumbnails:after {
+.goods-thumbnails.main-page {
+    border-top: none;
+}
+
+.goods-thumbnails.main-page:after {
     display: block;
     content: "";
     width: 91%;
@@ -3527,6 +3531,14 @@ section.promo-section {
     font-size: 12px;
     line-height: 16px;
     padding: 0;
+}
+
+.simmilar {
+    padding: 38px 0 0 0;
+}
+
+.simmilar .good-thumbnail {
+    margin: 0 0 30px 0;
 }
 
 
