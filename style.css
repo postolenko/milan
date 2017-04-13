@@ -3157,10 +3157,11 @@ section.promo-section {
     left: -25px;
 }
 
-.slide-discount {
+.big-slider-box .slide-discount {
     position: absolute;
     top: -94px;
     left: 19%;
+    background-image: url(img/discount_red_bg.png);
 }
 
 .big-slider {
