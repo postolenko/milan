@@ -2857,11 +2857,11 @@ section.promo-section {
 }
 
 .two-cols-photo-block .col-1 {
-    width: 73%;
+    width: 70%;
 }
 
 .two-cols-photo-block .col-2 {
-    width: 27%;
+    width: 30%;
 }
 
 .photo-border {
@@ -2870,7 +2870,7 @@ section.promo-section {
     max-width: 700px;
     height: 540px;
     position: relative;
-
+    margin: 0 0 0 -3%;
 }
 
 .photo-border:before,
