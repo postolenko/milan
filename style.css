@@ -1014,7 +1014,7 @@ button.white-btn,
     box-shadow: 0px 0px 2px 0px rgba(0, 0, 0, .15);
 }
 
-.main-nav ul li.active-menu:hover .inner-menu {
+.main-nav ul li.active-menu .inner-menu {
     display: block !important;
     padding-left: 7% !important;
     padding-right: 7% !important;
