@@ -788,7 +788,7 @@ button.white-btn,
     position: absolute;
     top: 50%;
     margin: -7px;
-    z-index: 2;
+    z-index: 4;
 }
 
 .promo-slider-box .slick-prev {
@@ -956,7 +956,7 @@ button.white-btn,
     line-height: 24px;
     font-weight: 400;
     color: #373940;
-    margin: 0;
+    margin: 5px 0;
     padding: 5px 0;
     border-bottom: 1px solid transparent;
 
@@ -1014,10 +1014,10 @@ button.white-btn,
     box-shadow: 0px 0px 2px 0px rgba(0, 0, 0, .15);
 }
 
-.main-nav ul li .inner-menu {
+/*.main-nav ul li .inner-menu {
     padding-left: 7% !important;
     padding-right: 7% !important;
-}
+}*/
 
 .main-nav ul li.active-menu:hover .inner-menu {
     display: block !important;

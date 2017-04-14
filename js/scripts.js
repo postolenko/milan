@@ -58,6 +58,12 @@ $(document).ready(function() {
 
         bodyWidth = w.innerWidth || e.clientWidth || g.clientWidth;
 
+        if( bodyWidth > 768 ) {
+
+            $(".inner-menu").css({"height" : 0 + "px"});
+
+        }
+
         // getDiscountSize();
 
     });
@@ -234,7 +240,7 @@ $(document).ready(function() {
 
         if(bodyWidth > 768 ) {
 
-            $(".main-nav ul li a").bind({
+            $(".main-nav > ul > li > a").bind({
               mouseenter: function() {
 
                 $(this).parent("li").addClass("active-menu");

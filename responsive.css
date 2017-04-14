@@ -155,12 +155,14 @@
 	.main-nav {
 		display: none;
 		height: 100vh;
-		padding: 20px 0;
+		overflow-y: scroll;
+		/*padding: 20px 0;*/
 	    position: fixed;
 	    top: 0;
 	    left: 0;
 	    z-index: 5;
-	    width: 100%;
+	    width: 120%;
+	    padding: 20px 16% 20px 1%;
 	    background: rgba(255, 255, 255, .9);
 	}
 
@@ -200,7 +202,6 @@
 
 	.inner-menu-list.catalog-nav li {
 		width: 33.33%;
-		margin: 10px 0;
 		padding: 0 3%;
 	}
 
@@ -210,6 +211,11 @@
 
 	.inner-menu-list.sort-nav li {
 		width: auto;
+	}
+
+	.main-nav ul li .inner-menu {
+		padding-left: 7% !important;
+		padding-right: 7% !important;
 	}
 
 	/*-- /Header --*/
