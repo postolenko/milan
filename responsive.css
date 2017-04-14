@@ -308,6 +308,32 @@
 
 	/*-- /Каталог --*/
 
+	/*-- Контакты --*/
+
+	.map-box {
+	    margin: 20px 0;
+	}
+
+	.map-box #map {
+	    height: 350px;
+	}
+
+	.two-cols-contacts .left,
+	.two-cols-contacts .right {
+	    width: 100%;
+	    padding: 0;
+	}
+
+	.send-form {
+	    max-width: 350px;
+	}
+
+	.input-block textarea {
+	    height: 125px;
+	}
+
+	/*-- /Контакты --*/
+
 	/*-- Footer --*/
 
 	.footer .row {
@@ -338,6 +364,19 @@
 
 @media only screen and (max-width: 600px) {
 
+	h2 {
+		padding: 17px 0 0 0;
+	}
+
+	.factory-thumbnails {
+	    margin: 0 0 8px 0;
+	}
+
+	.factory-thumbnail {
+	    width: 50%;
+	    padding: 0 2%;
+	}
+
 	/*-- Каталог --*/
 
 	.catalog-thumbnails .good-thumbnail {
@@ -348,14 +387,45 @@
 
 	/*-- /Каталог --*/
 
-	.factory-thumbnails {
-	    margin: 0 0 8px 0;
+	/*-- Услуги --*/
+
+	.article-two-cols {
+		padding: 5px 0;
 	}
 
-	.factory-thumbnail {
-	    width: 50%;
-	    padding: 0 2%;
+	.article-two-cols .left,
+	.article-two-cols .right {
+	    width: 100%;
 	}
+
+	.article-two-cols .right {
+	    text-align: center;
+	}
+
+	/*-- /Услуги --*/
+
+	/*-- О нас --*/
+
+	.two-cols-photo-block {
+	    margin: 30px 0 15px 0;
+	}
+
+	.two-cols-photo-block .col-1,
+	.two-cols-photo-block .col-2 {
+	    width: 100%;
+	}
+
+	.photo-border {
+	    height: 330px;
+	    margin: 0;
+	}
+
+	.photo-border .img-box {
+	    height: 330px;
+	    border: 11px solid #ffffff;
+	}
+
+	/*-- /О нас --*/
 
 }
 

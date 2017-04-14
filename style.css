@@ -3053,6 +3053,7 @@ section.promo-section {
 
 .article-two-cols .left {
     width: 22%;
+    padding: 0 1% 0 0;
 }
 
 .article-two-cols .right {
@@ -3064,6 +3065,7 @@ section.promo-section {
     width: 100%;
     max-width: 130px;
     height: 125px;
+    overflow: hidden;
     margin: 23px auto 0 auto;
 }
 
