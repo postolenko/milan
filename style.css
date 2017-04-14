@@ -2920,6 +2920,7 @@ section.promo-section {
 }
 
 .catalog-thumbnails .good-thumbnail .good-header {
+    text-align: left;
     position: relative;
     top: 0;
 }
