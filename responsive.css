@@ -1,5 +1,11 @@
 @media only screen and (max-width: 1280px) {
 
+	.content:before {
+		display: none;
+	}
+
+	/*-- Header --*/
+
 	.header .row {
 		padding: 0 2%;
 	}
@@ -16,24 +22,18 @@
 	    padding: 0px 5px;
 	}
 
+	/*-- /Header --*/
+
 }
 
 
 @media only screen and (max-width: 1024px) {
 
-	.header .col-1 {
-	   
-	}
-
-	
+	/*-- Header --*/
 
 	.header .col-3 {
 	    width: 50%;
 	}
-
-/*	.header-tel-link {
-		display: none;
-	}*/
 
 	.header .col-2.search-box {
 		display: none;
@@ -56,13 +56,10 @@
 	}
 
 	.search-resp-btn {
-		/*display: block;*/
 		display: inline-block;
 		vertical-align: top;
-		/*display: none;*/
 		width: 30px;
 		height: 36px;
-		/*outline: 1px solid red;*/
 		border: 1px solid transparent;
 		position: relative;
 	    top: -7px;
@@ -76,7 +73,6 @@
 	}
 
 	.search-block {
-		/*display: none;*/
 		width: 100%;
 		max-width: 100%;
 		padding: 10px 2%;
@@ -89,20 +85,51 @@
 	    border-bottom: 1px solid #dfdfdf;
 	}
 
+	/*-- /Header --*/
+
+	/*-- Main Page --*/
+
+	.catalog-nav li {
+	    width: 25%;
+	    padding: 15px 0;
+	}
+
+	/*-- /Main Page --*/
+
 }
 
 
 @media only screen and (max-width: 768px) {
 
+	header h2 {
+	    font-size: 31px;
+	    line-height: 56px;
+	}
+
+	header h2:before {
+	    margin: 0 6px 0 0;
+	    width: 41px;
+	    height: 3px;
+	}
+
+	header h2:after {
+	    margin: 0 0 0 5px;
+	    width: 41px;
+	    height: 2px;
+	}
+
+	/*-- Header --*/
+
 	.header {
 		text-align: right;
+		padding: 6px 0;
 	}
 
 	.header .col-1 {
 		width: 14%;
 		position: fixed;
-		top: 17px;
-		left: 2%;
+    	top: 2px;
+    	left: 2%;
 		z-index: 10;
 		text-align: left;
 	}
@@ -185,16 +212,147 @@
 		width: auto;
 	}
 
-/*	.cart span {
-		display: none;
-	}*/
+	/*-- /Header --*/
 
+	.main-content {
+	    margin: 35px 0 0 0;
+	    padding: 0;
+	}
+
+	/*-- Main Page --*/
+
+	.promo-slider .slide .col-left {
+	    width: 100%;
+	    position: absolute;
+	}
+
+	.promo-slider-box .discounts .slide-discount {
+	    top: -27px;
+	    left: 18%;
+	    width: 100px;
+	    height: 100px;
+	    margin: 0 0 0 -50px;
+	}
+
+	.slide-discount p {
+	    font-size: 48px;
+	    line-height: 97px;
+	}
+
+	.milan {
+	    right: 1%;
+	}
+
+	.photo .img-box {
+	    width: 100%;
+	    height: 335px;
+	    bottom: -20px;
+	    left: 10%;
+	}
+
+	.promo-slider .slide .col-right {
+	    display: block;
+	    width: 90%;
+	    margin: 0 auto;
+	    position: relative;
+	    z-index: 2;
+	    background: rgba(0, 0, 0, .6);
+	    text-align: center;
+	}
+
+	.promo-slider .slide .price {
+	    margin: 0 0 0 10%;
+	}
+
+	.catalog-nav-box {
+	    padding: 5px 0 19px 0;
+	}
+
+	.good-thumbnail {
+	    width: 33.33%;
+	}
+
+	/*-- /Main Page --*/
+
+	/*-- Footer --*/
+
+	.footer .row {
+	    background-position: left 0;
+	}
+
+	.contacts {
+	    padding: 20px 0 16px 0;
+	}
+
+	.footer .col {
+	    width: 100%;
+	    padding: 2px 0;
+	    text-align: center;
+	}
+
+	.footer .col-3 {
+		text-align: center;
+	}
+
+	.soc-list {
+	    margin: 6px 0 0 0;
+	}
+
+	/*-- /Footer --*/
 
 }
 
+@media only screen and (max-width: 600px) {
 
+	.factory-thumbnails {
+	    margin: 0 0 8px 0;
+	}
+
+	.factory-thumbnail {
+	    width: 50%;
+	    padding: 0 2%;
+	}
+
+}
 
 @media only screen and (max-width: 480px) {
+
+	header h2:before {
+	    margin: 0 6px 0 0;
+	    width: 20px;
+	    height: 3px;
+	}
+
+	header h2:after {
+	    margin: 0 0 0 5px;
+	    width: 20px;
+	    height: 2px;
+	}
+
+	h3 {
+	    font-size: 27px;
+	    line-height: 32px;
+	}
+
+	header.main-h {
+	    display: block;
+	    margin: 10px auto 18px auto;
+	}
+
+	header.main-h:before {
+	    margin: 0 auto 10px auto;
+	}
+
+	header.main-h:after {
+	    margin: 15px auto 0 auto;
+	}
+
+	header.main-h h2 {
+	    font-size: 44px;
+	    line-height: 44px;
+	}
+
+	/*-- Header --*/
 
 	a.header-tel-link {
 		display: none;
@@ -204,14 +362,90 @@
 	    width: 50%;
 	}
 
+	/*-- /Header --*/
+
+	/*-- Main Page --*/
+
+	.catalog-nav li {
+	    width: 33.33%;
+	}
+
+	.good-thumbnail {
+	    display: block;
+	    width: 60%;
+	    margin: 0 auto;
+	}
+
+	/*-- /Main Page --*/
+
+}
+
+@media only screen and (max-width: 410px) {
+
+	header h2:before,
+	header h2:after {
+		display: none;
+	}
+
+/*	.main-content section {
+	    padding-bottom: 18px;
+	    padding-top: 18px;
+	}*/
+
+	.main-content section {
+	    padding: 10px 5% 20px 5%;
+	}
+
+	/*-- Main Page --*/
+
+	.catalog-nav li {
+	    width: 50%;
+	}
+
+	.good-thumbnail {
+	    width: 80%;
+	}
+
+	.good-thumbnail:hover .inner-block {
+	    width: 130%;
+	    left: -15%;
+	    padding: 20px 15px 5px 15px;
+	}
+
+	/*-- /Main Page --*/
+
 }
 
 @media only screen and (max-width: 350px) {
 
+	/*-- Main Page --*/
+
+	.catalog-nav li {
+	    width: 50%;
+	}
+
+	.good-thumbnail {
+	    width: 70%;
+	}
+
+	.factory-thumbnail {
+	    width: 100%;
+	    display: block;
+	    max-width: 223px;
+	    margin: 18px auto;
+	}
+
+	.factory-thumbnail .img-box {
+		height: 64px;
+	}
+
+	/*-- /Main Page --*/
 
 }
 
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 769px) {
+
+	/*-- Header --*/
 
 	.main-nav {
 		display: block !important;
@@ -220,5 +454,7 @@
 	.inner-menu {
 		height: auto !important;
 	}
+
+	/*-- /Header --*/
 
 }

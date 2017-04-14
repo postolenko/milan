@@ -241,7 +241,7 @@ $(document).ready(function() {
 
                 $(".active-menu .inner-menu").css({
                     "min-width" : $(".header .row").width() + "px",
-                    "top" : $(this).height() + 4 + "px"
+                    "top" : $(this).height() + 5 + "px"
                 });
 
                 $(".active-menu .inner-menu").offset({left : $(".main-nav").offset().left });
@@ -257,57 +257,56 @@ $(document).ready(function() {
 
         }
 
-    });
+        $(".respmenubtn").click(function() {
+
+            if( $(".main-nav").is(":hidden") ) {
+
+                $(".main-nav").fadeIn(400);
+
+                $(this).addClass("active");
+
+            } else {
+
+                $(".main-nav").fadeOut(400);
+
+                $(this).removeClass("active");
+
+            }
+
+        });
 
 
-    $(".respmenubtn").click(function() {
+        $(".show-menu-btn").click(function() {
 
-        if( $(".main-nav").is(":hidden") ) {
+            var activeClass = "menu_item_" + $(".show-menu-btn").index(this);
 
-            $(".main-nav").fadeIn(400);
+            $(this).parent("li").addClass( activeClass );
 
-            $(this).addClass("active");
+            var activeMenuBox = $(".main-nav li." + activeClass + " .inner-menu");
 
-        } else {
+            var activeMenuList = $(".main-nav li." + activeClass + " .inner-menu-list");
 
-            $(".main-nav").fadeOut(400);
+            var activeHeight = activeMenuList.outerHeight();
 
-            $(this).removeClass("active");
+            if(activeMenuBox.height() > 0) {
 
-        }
+                activeMenuBox.animate({
+                    "height" : 0 + "px"
+                }, 500);
 
-    });
+                $(this).removeClass("top");
 
+            } else {
 
-    $(".show-menu-btn").click(function() {
+                activeMenuBox.animate({
+                    "height" : activeHeight + "px"
+                }, 500);
 
-        var activeClass = "menu_item_" + $(".show-menu-btn").index(this);
+                $(this).addClass("top");
 
-        $(this).parent("li").addClass( activeClass );
+            }
 
-        var activeMenuBox = $(".main-nav li." + activeClass + " .inner-menu");
-
-        var activeMenuList = $(".main-nav li." + activeClass + " .inner-menu-list");
-
-        var activeHeight = activeMenuList.outerHeight();
-
-        if(activeMenuBox.height() > 0) {
-
-            activeMenuBox.animate({
-                "height" : 0 + "px"
-            }, 500);
-
-            $(this).removeClass("top");
-
-        } else {
-
-            activeMenuBox.animate({
-                "height" : activeHeight + "px"
-            }, 500);
-
-            $(this).addClass("top");
-
-        }
+        });
 
     });
 
