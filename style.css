@@ -1569,13 +1569,14 @@ section.promo-section {
     vertical-align: top;
     width: 67%;
     position: relative;
-    z-index: 2;
 }
 
 .promo-slider .slide .col-right {
     display: inline-block;
     vertical-align: top;
     width: 33%;
+    position: relative;
+    z-index: 2;
 }
 
 .slide-discount {
