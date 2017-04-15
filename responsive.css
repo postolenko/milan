@@ -254,6 +254,18 @@
 	    height: 2px;
 	}
 
+	/*-- Slick --*/
+
+	.promo-slider-box .slick-next {
+		right: 8%;
+	}
+
+	.promo-slider-box .slick-prev {
+		left: 8%;
+	}
+
+	/*-- /Slick --*/
+
 	/*-- Header --*/
 
 	.header {
@@ -292,7 +304,6 @@
 		display: none;
 		height: 100vh;
 		overflow-y: scroll;
-		/*padding: 20px 0;*/
 	    position: fixed;
 	    top: 0;
 	    left: 0;
@@ -708,16 +719,16 @@
 
 	/*-- Slick --*/
 
+	.promo-slider-box .slick-arrow {
+		top: 90%;
+	}
+
 	.promo-slider-box .slick-next {
-		right: 13%;
+		right: 11%;
 	}
 
 	.promo-slider-box .slick-prev {
-		left: 13%;
-	}
-
-	.promo-slider-box .slick-arrow {
-		top: 90%;
+		left: 11%;
 	}
 
     /*-- /Slick --*/
