@@ -460,6 +460,10 @@
 	    margin: 3px 0;
 	}
 
+	.catalog-empty {
+	    margin: 20px 0;
+	}
+
 	/*-- /Каталог --*/
 
 	/*-- Контакты --*/
@@ -846,7 +850,7 @@
 
 	.catalog-thumbnails .good-thumbnail {
 		display: block;
-	    min-width: 300px;
+	    min-width: 304px;
 	    margin: 5px auto;
 	}
 
@@ -895,7 +899,7 @@
 	}
 
 	.good-thumbnail {
-	    width: 70%;
+	    width: 80%;
 	}
 
 	.factory-thumbnail {
@@ -918,7 +922,7 @@
 	}
 
 	.catalog-thumbnails .good-thumbnail {
-	    min-width: 296px;
+	    min-width: 284px;
 	}
 
 	.pagination li {

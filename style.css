@@ -1029,6 +1029,7 @@ button.white-btn,
     position: absolute;
     top: 9px;
     right: 3%;
+    z-index: 2;
     cursor: pointer;
     overflow: hidden;
     border: 0;
@@ -2483,6 +2484,8 @@ section.promo-section {
 .good-table .cell {
     display: table-cell;
     vertical-align: middle;
+    padding-top: 12px;
+    padding-bottom: 12px;
 }
 
 .good-table p {
@@ -2500,6 +2503,7 @@ section.promo-section {
 
 .good-table .cell-2 {
     width: 10%;
+    padding: 3px 0;
 }
 
 .good-table .cell-3 {
@@ -3682,7 +3686,7 @@ section.promo-section {
 .additional-good .good-header {
     display: table-cell;
     vertical-align: middle;
-    padding: 0 0 0 4%;
+    padding: 0 1% 0 4%;
 }
 
 .additional-good .good-header .p-1 {
