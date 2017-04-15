@@ -352,7 +352,12 @@ $(document).ready(function() {
     $(function() {
 
         $(this).keydown(function(eventObject){
-            if (eventObject.which == 27) $('.search-box').fadeOut(300);  
+            if (eventObject.which == 27) {
+
+                 $('.search-box, .main-nav').fadeOut(300);
+                 $(".respmenubtn").removeClass("active");
+
+             }
         });
 
     });
