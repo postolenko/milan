@@ -186,15 +186,15 @@
 	    height: 100px;
 	}
 
+	.slide-discount p {
+	    font-size: 43px;
+	    line-height: 98px;
+	}
+
 	.big-slider-box .slide-discount {
 	    top: -32px;
 	    left: 19%;
 	    z-index: 3;
-	}
-
-	.slide-discount p {
-	    font-size: 43px;
-	    line-height: 98px;
 	}
 
 	.big-slider {
@@ -412,11 +412,6 @@
 	    height: 100px;
 	    margin: 0 0 0 -50px;
 	}
-
-/*	.slide-discount p {
-	    font-size: 48px;
-	    line-height: 97px;
-	}*/
 
 	.milan {
 	    right: 1%;
