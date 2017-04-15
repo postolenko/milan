@@ -1,14 +1,5 @@
 @charset "utf-8";
 
-/*------------------*/
-/*-- Fonts --*/
-/*------------------*/
-
-
-
-
-
-
 /*-------------------------------------------*/
 /* BASIC SETUP */
 /*-------------------------------------------*/
@@ -192,7 +183,13 @@ input[type='number'] {
 /*-------------------------------------------*/
 
 h1 {
-
+    font-family: "PT Serif", Arial, Verdana, serif;
+    font-size: 25px;
+    line-height: 35px;
+    font-weight: normal;
+    font-style: italic;
+    color: #00b500;
+    padding: 5px 0;
 }
 
 h2 {
@@ -505,10 +502,7 @@ input[type=radio]:checked + label:before {
     background-position: 0 1px;
 }
 
-
 .green-btn {
-    /*display: inline-block;
-    vertical-align: top;*/
     display: block;
     width: 120px;
     height: 41px;
@@ -641,7 +635,6 @@ input[type=radio]:checked + label:before {
 a.white-btn,
 button.white-btn,
 .white-btn {
-    /*display: block;*/
     display: inline-block;
     vertical-align: top;
     width: 120px;
@@ -830,10 +823,6 @@ button.white-btn,
 
 /*-- Breadcrumbs --*/
 
-.breadcrumbs-sect {
-
-}
-
 .breadcrumbs {
     padding: 13px 2%;
 }
@@ -901,10 +890,6 @@ button.white-btn,
 
 /*-- /Breadcrumbs --*/
 
-/*.scroll-horizontal {
-
-}*/
-
 /*-------------------------------------------*/
 /* ----- HEADER ------ */
 /*-------------------------------------------*/
@@ -937,10 +922,6 @@ button.white-btn,
 }
 
 /*-- Main Navigation --*/
-
-.main-nav {
-
-}
 
 .main-nav ul {
     font-size: 0;
@@ -1116,7 +1097,6 @@ button.white-btn,
     -o-transform: rotate(-180deg);
     transform: rotate(-180deg);
 }
-
 
 /*-- /Main Navigation --*/
 
@@ -1531,7 +1511,6 @@ a.cart {
     max-height: 100%;
 }
 
-
 section.promo-section {
     position: relative;
     padding: 0 !important;
@@ -1729,7 +1708,6 @@ section.promo-section {
     margin: 0 5%;
     padding: 0;
 }
-
 
 /*-- /Promo Slider Section - Main Page Section 1 --*/
 
@@ -2089,10 +2067,6 @@ section.promo-section {
     padding: 10px 0;
 }
 
-.good-descripts {
-
-}
-
 .good-descripts .descript {
     display: table;
     width: 100%;
@@ -2244,10 +2218,6 @@ section.promo-section {
     padding: 30px 0 25px 0;
 }
 
-.sort-nav {
-
-}
-
 .sort-nav li {
     display: inline-block;
     vertical-align: top;
@@ -2386,10 +2356,6 @@ section.promo-section {
     padding: 17px 0 0 0;
 }
 
-.factory-thumbnail .new {
-
-}
-
 /*-- /Facrory Section - Main Page Section 4 --*/
 
 /*-- Ваш Блокнот --*/
@@ -2422,7 +2388,6 @@ section.promo-section {
 }
 
 .goods-list {
-    /*max-width: 580px;*/
     padding: 2px 0 4px 0;
     position: relative;
 }
@@ -2431,7 +2396,6 @@ section.promo-section {
     display: block;
     content: "";
     width: 100%;
-    /*max-width: 580px;*/
     position: absolute;
     bottom: 0;
     left: 0;
@@ -2439,7 +2403,6 @@ section.promo-section {
 }
 
 .good-cart {
-    /*max-width: 580px;*/
     position: relative;
     border-bottom: 1px solid #e7e7e7;
 }
@@ -2504,8 +2467,6 @@ section.promo-section {
     width: 100%;    
     min-height: 60px;
     position: relative;
-    /*border-collapse: collapse;*/
-    /*border-bottom: 1px solid #e7e7e7;*/
 }
 
 .good-table:after {
@@ -2518,14 +2479,6 @@ section.promo-section {
     right: 0;
     border-bottom: 1px solid #e7e7e7;
 }
-
-/*.good-cart:last-child .good-table:nth-child(1) {
-    border-bottom: 1px solid #f1bfbf;
-}*/
-
-/*.good-cart:last-child:hover .good-table:nth-child(1) {
-    border-bottom: 1px solid #e7e7e7;
-}*/
 
 .good-table .cell {
     display: table-cell;
@@ -2694,58 +2647,9 @@ section.promo-section {
 }
 
 .content-block {
-    /*display: none;*/
     width: 100%;
-/*    position: absolute;
-    top: 100%;
-    left: 0;*/
     background: rgba(255, 255, 255, 1);
-
-/*    -webkit-transition-property: opacity;
-    -webkit-transition-duration: .3s;
-    -webkit-transition-timing-function: ease;
-
-    -moz-transition-property: opacity;
-    -moz-transition-duration: .3s;
-    -moz-transition-timing-function: ease;
-
-    -ms-transition-property: opacity;
-    -ms-transition-duration: .3s;
-    -ms-transition-timing-function: ease;
-
-    -o-transition-property: opacity;
-    -o-transition-duration: .3s;
-    -o-transition-timing-function: ease;
-
-    transition-property: opacity;
-    transition-duration: .3s;
-    transition-timing-function: ease;*/
 }
-
-/*.good-cart:hover {
-    display: block;
-    z-index: 2;
-    height: auto;
-    position: relative;
-}*/
-
-/*.good-cart .for_coor {
-    display: block;
-    width: 106%;
-    height: 100%;
-    position: absolute;
-    top: 0;
-    left: -3%;
-    -webkit-box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, .2);
-    -moz-box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, .2);
-    box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, .2);
-}*/
-
-/*.good-cart:hover .content-block {
-    display: block;
-    z-index: 2;
-    height: auto;
-}*/
 
 .total-block {
     text-align: right;
@@ -2882,10 +2786,6 @@ section.promo-section {
     color: #c60000;
 }
 
-.catalog-thumbnails {
-    /*margin: 10px 0;*/
-}
-
 .catalog-thumbnails .good-thumbnail {
     width: 33.33%;
     margin: 3px 0;
@@ -2980,10 +2880,6 @@ section.promo-section {
 
 .catalog-thumbnails .good-thumbnail .bottom-block {
     display: block;
-}
-
-.pagination-block {
-
 }
 
 .pagination {
@@ -3231,14 +3127,9 @@ section.promo-section {
 
 /*-- Контакты --*/
 
-.map-sect {
-
-}
-
 .map-box {
     display: block;
     margin: 50px 0;
-    /*overflow: hidden;*/
 }
 
 .map-box #map {
@@ -3389,10 +3280,6 @@ section.promo-section {
     position: relative;
 }
 
-.big-slider-box {
-    
-}
-
 .big-slider-box:before {
     display: block;
     content: "";
@@ -3451,10 +3338,6 @@ section.promo-section {
     z-index: 3;
 }
 
-.miniatures-slider {
-    
-}
-
 .miniatures-slider div.miniature-slide {
     cursor: pointer;
     overflow: hidden;
@@ -3488,7 +3371,6 @@ section.promo-section {
 .material-thumb {
     display: inline-block;
     vertical-align: top;
-    /*width: 25%;*/
     width: 74px;
     margin: 5px 0;
     text-align: center;
@@ -3545,10 +3427,6 @@ section.promo-section {
     text-align: right;
     position: relative;
     top: -14px;
-}
-
-.old-price {
-
 }
 
 .to-notepad-btn {
@@ -3757,7 +3635,6 @@ section.promo-section {
     display: table;
     width: 100%;
     padding: 10px 0;
-    /*outline: 1px solid red;*/
 
     -webkit-transition-property: box-shadow;
     -webkit-transition-duration: .3s;
@@ -3824,7 +3701,6 @@ section.promo-section {
     margin: 0 0 30px 0;
 }
 
-
 /*-- /Товар --*/
 
 /*-------------------------------------------*/
@@ -3838,10 +3714,6 @@ footer {
     display: block;
     width: 100%;
 }
-
-/*.footer {
-    padding: 10px 0;
-}*/
 
 .footer .row {
     padding-top: 10px;
@@ -3911,7 +3783,6 @@ footer {
     padding: 0;
 }
 
-
 .footer p {
     font-family: "PT Serif", Arial, Verdana, serif;
     font-size: 14px;
@@ -3924,7 +3795,6 @@ footer {
 .footer p sup {
     position: relative;
     top: 1px;
-    /*left: 1px;*/
     font-size: 11px;
 }
 

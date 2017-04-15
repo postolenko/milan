@@ -10,7 +10,6 @@
 
 	.map-box #map {
 	    width: 104%;
-	    /*height: 540px;*/
 	    margin: 0 0 0 -2%;
 	}
 
@@ -657,8 +656,10 @@
 	}
 
 	.photo-border {
+		display: block;
+		width: 96%;
 	    height: 330px;
-	    margin: 0;
+	    margin: 0 auto 30px auto;
 	}
 
 	.photo-border .img-box {
