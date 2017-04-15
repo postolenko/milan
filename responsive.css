@@ -52,6 +52,10 @@
 
 @media only screen and (max-width: 1024px) {
 
+	.inner-menu-list.catalog-nav li {
+	    width: 16.66%;
+	}
+
 	/*-- Header --*/
 
 	.header .col-3 {
@@ -355,9 +359,24 @@
 		padding: 10px 0;
 	}
 
+	.main-nav ul li a.active,
+	.main-nav ul li a:active {
+		position: relative;
+		z-index: initial;
+	}
+
+	.main-nav ul li a:hover {
+		position: relative;
+		z-index: initial;
+	}
+
 	.inner-menu-list.catalog-nav li {
 		width: 33.33%;
 		padding: 0 3%;
+	}
+
+	.inner-menu-list.catalog-nav li a {
+		display: block;
 	}
 
 	.inner-menu-list.sort-nav {
@@ -922,7 +941,7 @@
 		display: block !important;
 	}
 
-	.inner-menu {
+	.main-nav .inner-menu {
 		height: auto !important;
 	}
 
