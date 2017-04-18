@@ -325,19 +325,18 @@ $(document).ready(function() {
     $(function() {
 
         var indexMouseenter;
-        // var indexMouseleave;
 
-            $(".good-thumbnail").bind({
+            $(".goods_miniatures .good-thumbnail").bind({
 
                 mouseenter: function() {
 
-                indexMouseenter = $(".good-thumbnail").index(this);
+                indexMouseenter = $(".goods_miniatures .good-thumbnail").index(this);
 
-                $(".good-thumbnail:eq("+ indexMouseenter +")").addClass("hover_good");
+                $(".goods_miniatures .good-thumbnail:eq("+ indexMouseenter +")").addClass("hover_good");
 
             }, mouseleave: function() {
 
-                $(".good-thumbnail").removeClass("hover_good");
+                $(".goods_miniatures .good-thumbnail").removeClass("hover_good");
 
             }
 

@@ -2178,12 +2178,12 @@ section.promo-section {
     min-height: 100%;
 }
 
-.bottom-block {
-    /*display: none;*/
+.goods_miniatures .bottom-block {
+    display: none;
+    padding: 10px 0;
     opacity: 0;
     height: 0;
     overflow: hidden;
-    padding: 10px 0;
 
     -webkit-transition-property: opacity, height;
     -webkit-transition-duration: .7s;
@@ -2356,11 +2356,11 @@ section.promo-section {
     transition-timing-function: ease;
 }
 
-.good-thumbnail.hover_good {
-  -webkit-animation: hoverthumbnal .7s ease; /* Safari 4+ */
-  -moz-animation:    hoverthumbnal .7s ease; /* Fx 5+ */
-  -o-animation:      hoverthumbnal .7s ease; /* Opera 12+ */
-  animation:         hoverthumbnal .7s ease; /* IE 10+, Fx 29+ */
+.goods_miniatures .good-thumbnail.hover_good {
+  -webkit-animation: hoverthumbnal .7s ease;
+  -moz-animation:    hoverthumbnal .7s ease;
+  -o-animation:      hoverthumbnal .7s ease;
+  animation:         hoverthumbnal .7s ease;
 }
 
 @-webkit-keyframes hoverthumbnal {
@@ -2387,7 +2387,7 @@ section.promo-section {
   100% { opacity: 1; }
 }
 
-.good-thumbnail.hover_good:hover .inner-block {
+.goods_miniatures .good-thumbnail:hover .inner-block {
     width: 150%;
     position: absolute;
     top: -95px;
@@ -2399,21 +2399,22 @@ section.promo-section {
     box-shadow: 0px 4px 19px 4px rgba(0, 0, 0, .1);
 }
 
-.good-thumbnail.hover_good:hover .good-header {
+.goods_miniatures .good-thumbnail:hover .good-header {
     position: relative;
     top: 0;
 }
 
-.good-thumbnail.hover_good:hover .good-header .articlum {
+.goods_miniatures .good-thumbnail:hover .good-header .articlum {
     display: inline-block;
     vertical-align: baseline;
 }
 
-.good-thumbnail.hover_good:hover .img-box {
+.goods_miniatures .good-thumbnail:hover .img-box {
     height: 166px;
 }
 
-.good-thumbnail.hover_good:hover .bottom-block {
+.goods_miniatures .good-thumbnail:hover .bottom-block {
+    display: block;
     opacity: 1;
     height: auto;
 }
@@ -3094,6 +3095,7 @@ section.promo-section {
 
 .catalog-thumbnails .good-thumbnail .bottom-block {
     display: block;
+    padding: 10px 0;
 }
 
 .pagination {
