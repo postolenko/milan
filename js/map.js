@@ -2,7 +2,7 @@ ymaps.ready(init);
 var myMap,
     myPlacemark;
 
-function init(){     
+function init(){   
     myMap = new ymaps.Map("map", {
         center: [55.733677, 37.587874],
         zoom: 16
@@ -18,8 +18,31 @@ function init(){
         iconImageOffset: [-36, -76]
     });
 
-     myMap.behaviors
+    myMap.behaviors
     .disable(['scrollZoom', 'rightMouseButtonMagnifier']);
 
     myMap.geoObjects.add(myPlacemark);
+
+    myMap.controls.remove('geolocationControl');
+    myMap.controls.remove('searchControl');
+    myMap.controls.remove('trafficControl');
+    myMap.controls.remove('typeSelector');
+    myMap.controls.remove('fullscreenControl');
+    myMap.controls.remove('rulerControl');
+    myMap.controls.remove('zoomControl');
+    myMap.behaviors.disable(['scrollZoom']);
+
 }
+
+    // myMap.removeControl(new YMaps.TypeControl());
+    // myMap.removeControl(new YMaps.ToolBar());
+    // myMap.removeControl(new YMaps.Zoom());
+    // myMap.removeControl(new YMaps.MiniMap());
+    // myMap.removeControl(new YMaps.ScaleLine());
+
+    // var typecontrol = new ymaps.TypeControl();
+    // myMap.addControl(typecontrol);
+     
+    // YMaps.Events.observe(myMap, myMap.Events.Click, function () {
+    //     myMap.removeControl(typecontrol);
+    // });

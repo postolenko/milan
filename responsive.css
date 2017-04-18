@@ -248,7 +248,7 @@
 	header h2:before {
 	    margin: 0 6px 0 0;
 	    width: 41px;
-	    height: 3px;
+	    height: 2px;
 	}
 
 	header h2:after {
@@ -391,6 +391,7 @@
 		padding-right: 7% !important;
 	}
 
+
 	/*-- /Header --*/
 
 	.main-content {
@@ -426,11 +427,11 @@
 
 	.promo-slider .slide .col-right {
 	    display: block;
-	    width: 90%;
+	    width: 100%;
 	    margin: 0 auto;
 	    position: relative;
 	    z-index: 2;
-	    background: rgba(0, 0, 0, .6);
+	    background: rgba(0, 0, 0, .5);
 	    text-align: center;
 	}
 
@@ -465,6 +466,31 @@
 	}
 
 	/*-- /Каталог --*/
+
+		/*-- О нас --*/
+
+	.two-cols-photo-block {
+	    margin: 30px 0 15px 0;
+	}
+
+	.two-cols-photo-block .col-1,
+	.two-cols-photo-block .col-2 {
+	    width: 100%;
+	}
+
+	.photo-border {
+		display: block;
+		width: 96%;
+	    height: 330px;
+	    margin: 0 auto 30px auto;
+	}
+
+	.photo-border .img-box {
+	    height: 330px;
+	    border: 11px solid #ffffff;
+	}
+
+	/*-- /О нас --*/
 
 	/*-- Контакты --*/
 
@@ -609,11 +635,6 @@
 	    margin: 0 0 8px 0;
 	}
 
-	.factory-thumbnail {
-	    width: 50%;
-	    padding: 0 2%;
-	}
-
 	/*-- /Main Page --*/
 
 	/*-- Каталог --*/
@@ -642,31 +663,6 @@
 	}
 
 	/*-- /Услуги --*/
-
-	/*-- О нас --*/
-
-	.two-cols-photo-block {
-	    margin: 30px 0 15px 0;
-	}
-
-	.two-cols-photo-block .col-1,
-	.two-cols-photo-block .col-2 {
-	    width: 100%;
-	}
-
-	.photo-border {
-		display: block;
-		width: 96%;
-	    height: 330px;
-	    margin: 0 auto 30px auto;
-	}
-
-	.photo-border .img-box {
-	    height: 330px;
-	    border: 11px solid #ffffff;
-	}
-
-	/*-- /О нас --*/
 
 	/*-- Блокнот --*/
 
@@ -900,17 +896,6 @@
 
 	.good-thumbnail {
 	    width: 80%;
-	}
-
-	.factory-thumbnail {
-	    width: 100%;
-	    display: block;
-	    max-width: 223px;
-	    margin: 18px auto;
-	}
-
-	.factory-thumbnail .img-box {
-		height: 64px;
 	}
 
 	/*-- /Main Page --*/

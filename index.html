@@ -972,6 +972,10 @@
 
 			  $(".promo-slider-box .discounts .slide-discount:eq("+ currentSlide +")").fadeIn(200);
 
+			  $(".slick-slide").removeClass("active");
+
+			  $(".slick-slide:eq("+ currentSlide +")").addClass("active");
+
 			});
 
 			$(".promo-slider").slick({
