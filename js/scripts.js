@@ -42,6 +42,13 @@ $(document).ready(function() {
 
     // -----------------------------------------------
 
+    var activeClass;
+    var activeMenuBox;
+    var activeMenuList;
+    var activeHeight;
+
+    // -----------------------------------------------
+
     $(window).resize(function() {
 
 
@@ -282,15 +289,15 @@ $(document).ready(function() {
 
         $(".show-menu-btn").click(function() {
 
-            var activeClass = "menu_item_" + $(".show-menu-btn").index(this);
+            activeClass = "menu_item_" + $(".show-menu-btn").index(this);
 
             $(this).parent("li").addClass( activeClass );
 
-            var activeMenuBox = $(".main-nav li." + activeClass + " .inner-menu");
+            activeMenuBox = $(".main-nav li." + activeClass + " .inner-menu");
 
-            var activeMenuList = $(".main-nav li." + activeClass + " .inner-menu-list");
+            activeMenuList = $(".main-nav li." + activeClass + " .inner-menu-list");
 
-            var activeHeight = activeMenuList.outerHeight();
+            activeHeight = activeMenuList.outerHeight();
 
             if(activeMenuBox.height() > 0) {
 
@@ -324,19 +331,15 @@ $(document).ready(function() {
 
     $(function() {
 
-        var indexMouseenter;
-
-            $(".goods_miniatures .good-thumbnail").bind({
+        $(".goods_miniatures .good-thumbnail").bind({
 
                 mouseenter: function() {
 
-                indexMouseenter = $(".goods_miniatures .good-thumbnail").index(this);
-
-                $(".goods_miniatures .good-thumbnail:eq("+ indexMouseenter +")").addClass("hover_good");
+                $(this).addClass("hover_good");
 
             }, mouseleave: function() {
 
-                $(".goods_miniatures .good-thumbnail").removeClass("hover_good");
+                $(this).removeClass("hover_good");
 
             }
 
