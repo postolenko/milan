@@ -834,7 +834,7 @@
 	    width: 80%;
 	}
 
-	.good-thumbnail:hover .inner-block {
+	.goods_miniatures .good-thumbnail:hover .inner-block {
 	    width: 130%;
 	    left: -15%;
 	    padding: 20px 15px 5px 15px;
@@ -892,10 +892,6 @@
 
 	.catalog-nav li {
 	    width: 50%;
-	}
-
-	.good-thumbnail {
-	    width: 80%;
 	}
 
 	/*-- /Main Page --*/
