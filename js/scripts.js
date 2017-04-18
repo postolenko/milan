@@ -325,7 +325,7 @@ $(document).ready(function() {
     $(function() {
 
         var indexMouseenter;
-        var indexMouseleave;
+        // var indexMouseleave;
 
             $(".good-thumbnail").bind({
 
@@ -333,25 +333,11 @@ $(document).ready(function() {
 
                 indexMouseenter = $(".good-thumbnail").index(this);
 
-                // $(".good-thumbnail:eq("+ indexMouseenter +")").addClass("hover_good");
-
-                setInterval(function() {
-
-                    $(".good-thumbnail:eq("+ indexMouseenter +")").addClass("hover_good");
-
-                }, 350);
-
-                // $(this).addClass("hover_good");
+                $(".good-thumbnail:eq("+ indexMouseenter +")").addClass("hover_good");
 
             }, mouseleave: function() {
 
                 $(".good-thumbnail").removeClass("hover_good");
-
-                // indexMouseleave = $(".good-thumbnail").index(this);
-
-                // $(".good-thumbnail:eq("+ indexMouseleave +")").removeClass("hover_good_opacity");
-
-                // $(".good-thumbnail:eq("+ indexMouseenter +")").removeClass("hover_good");
 
             }
 
