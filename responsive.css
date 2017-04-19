@@ -401,10 +401,10 @@
 
 	/*-- Main Page --*/
 
-	.promo-slider .slide .col-left {
+	/*.promo-slider .slide .col-left {
 	    width: 100%;
 	    position: absolute;
-	}
+	}*/
 
 	.promo-slider-box .discounts .slide-discount {
 	    top: -27px;
@@ -418,14 +418,14 @@
 	    right: 1%;
 	}
 
-	.photo .img-box {
+/*	.photo .img-box {
 	    width: 100%;
 	    height: 335px;
 	    bottom: -20px;
 	    left: 10%;
-	}
+	}*/
 
-	.promo-slider .slide .col-right {
+	/*.promo-slider .slide .col-right {
 	    display: block;
 	    width: 100%;
 	    margin: 0 auto;
@@ -433,11 +433,11 @@
 	    z-index: 2;
 	    background: rgba(0, 0, 0, .5);
 	    text-align: center;
-	}
+	}*/
 
-	.promo-slider .slide .price {
+	/*.promo-slider .slide .price {
 	    margin: 0 0 0 10%;
-	}
+	}*/
 
 	.catalog-nav-box {
 	    padding: 5px 0 19px 0;
@@ -623,9 +623,9 @@
 
 	/*-- Main Page --*/
 
-	.promo-slider .slide {
+	/*.promo-slider .slide {
 	    background-image: url(img/slide_bg_resp.jpg);
-	}
+	}*/
 
 	.good-thumbnail {
 	    width: 40%;

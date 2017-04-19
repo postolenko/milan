@@ -225,100 +225,31 @@
 								
 								<div class="slide">
 
-									<div class="col-left">
-										<div class="slide-discount">									
-											<p>-8%</p>
-										</div>
-										<div class="photo">
-											<div class="img-box photo_img_box">										
-												<img src="slides/slide_1.jpg" alt="">
-											</div>
-										</div>
-									</div>
-									
-									<div class="col-right">
-										
-										<div class="center-block">
-											<div class="center-inner">
-												<p class="top-p">Спальня</p>
-												<h3>EvolioSyte</h3>
-												<div class="offset-ziro">									
-													<div class="old-price-block">
-														<p class="old-price">125 000 р.</p>
-													</div>
-													<p class="price">18 200 р.</p>
-												</div>
-												<a href="#" class="white-btn">Подробнее</a>
-											</div>
-										</div>
+									<img class="slide-photo" src="slides/slide_photo.jpg" alt="">
 
+									<div class="slide-discount">									
+										<p>-8%</p>
 									</div>
 
 								</div>
 
 								<div class="slide">
 
-									<div class="col-left">
-										<div class="slide-discount">									
-											<p>-9%</p>
-										</div>
-										<div class="photo">
-											<div class="img-box photo_img_box">										
-												<img src="slides/slide_2.jpg" alt="">
-											</div>
-										</div>
+									<div class="slide-discount">									
+										<p>-9%</p>
 									</div>
 
-									<div class="col-right">
-										
-										<div class="center-block">
-											<div class="center-inner">
-												<p class="top-p">Спальня</p>
-												<h3>Rikolette Bikonti</h3>
-												<div class="offset-ziro">									
-													<div class="old-price-block">
-														<p class="old-price">125 000 р.</p>
-													</div>
-													<p class="price">18 200 р.</p>
-												</div>
-												<a href="#" class="white-btn">Подробнее</a>
-											</div>
-										</div>
-
-									</div>
+									<img class="slide-photo" src="slides/slide_photo.jpg" alt="">
 
 								</div>
 
 								<div class="slide">
 
-									<div class="col-left">
-										<div class="slide-discount">									
-											<p>-20%</p>
-										</div>
-										<div class="photo">
-											<div class="img-box photo_img_box">										
-												<img src="slides/slide_3.jpg" alt="">
-											</div>
-										</div>
+									<div class="slide-discount">									
+										<p>-20%</p>
 									</div>
 
-									<div class="col-right">
-										
-										<div class="center-block">
-											<div class="center-inner">
-												<p class="top-p">Спальня</p>
-												<h3>Rikolette</h3>
-												<div class="offset-ziro">									
-													<div class="old-price-block">
-														<p class="old-price">125 000 р.</p>
-													</div>
-													<p class="price">18 200 р.</p>
-												</div>
-												<a href="#" class="white-btn">Подробнее</a>
-											</div>
-										</div>
-
-									</div>
+									<img class="slide-photo" src="slides/slide_photo.jpg" alt="">
 
 								</div>
 
@@ -328,7 +259,7 @@
 
 					</section>
 
-					<!-- /romo Slider Section - Main Page Section 1 -->
+					<!-- /Promo Slider Section - Main Page Section 1 -->
 
 					<!-- Catalog Section - Main Page Section 2 -->
 
@@ -972,17 +903,13 @@
 
 			  $(".promo-slider-box .discounts .slide-discount:eq("+ currentSlide +")").fadeIn(200);
 
-			  $(".slick-slide").removeClass("active");
-
-			  $(".slick-slide:eq("+ currentSlide +")").addClass("active");
-
 			});
 
 			$(".promo-slider").slick({
 				slidesToShow: 1,
 				slidesToScroll: 1,
 				arrows: true,
-				fade: true,
+				// fade: true,
 				dots: false
 			});
 
