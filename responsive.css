@@ -236,6 +236,15 @@
 
 	/*-- /Товар --*/
 
+	/*-- Popup --*/
+
+	.popup-content {
+	    width: 80%;
+	    background: rgba(255, 255, 255, .8);
+	}
+
+	/*-- /Popup --*/
+
 }
 
 @media only screen and (max-width: 768px) {
@@ -467,7 +476,7 @@
 
 	/*-- /Каталог --*/
 
-		/*-- О нас --*/
+	/*-- О нас --*/
 
 	.two-cols-photo-block {
 	    margin: 30px 0 15px 0;
@@ -586,6 +595,25 @@
 	}
 
 	/*-- /Товар --*/
+
+	/*-- Popup --*/
+
+	.popup-content {
+	    width: 100%;
+	}
+
+	.popup-h:before,
+	.popup-h:after {
+	    width: 30px;
+	    height: 2px;
+	}
+
+	.popup-h span {
+	    font-size: 29px;
+	    line-height: 33px;
+	}
+
+	/*-- /Popup --*/
 
 	/*-- Footer --*/
 
@@ -811,6 +839,15 @@
 
 	/*-- /Товар --*/
 
+	/*-- Popup --*/
+
+	.popup {
+	    width: 98%;
+	    padding: 37px 1% 35px 1%;
+	}
+
+	/*-- /Popup --*/
+
 }
 
 @media only screen and (max-width: 410px) {
@@ -911,6 +948,15 @@
 	}
 
 	/*-- /Каталог --*/
+
+	/*-- Popup --*/
+
+	.popup-h span {
+	    font-size: 26px;
+	    line-height: 28px;
+	}
+
+	/*-- /Popup --*/
 
 }
 

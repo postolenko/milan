@@ -191,7 +191,7 @@
 					<button type="button" class="search-btn search-resp-btn"></button>
 					
 					<a class="header-tel-link" href="tel:88002000400">8 800 2000 400</a>
-					<a href="#" class="call-link">Перезвонить</a>
+					<a href="#" class="call-link show_popup" data-popup-name="popup_1">Перезвонить</a>
 					<a href="#" class="cart"><i class="notepad-icon"></i><span>Блокнот</span> 5</a>
 
 				</div>
@@ -203,6 +203,38 @@
 	</header>
 
 	<!-- /Header -->
+
+	<!-- Popups -->
+
+		<div class="popup-block scroll">
+			
+			<div class="popup-bg"></div>
+
+			<div class="popup clearfix" data-popup-name="popup_1">
+
+				<div class="top_block">
+					<button type="button" class="close-popup"></button>
+				</div>
+
+				<div class="popup-content">
+					<h2 class="popup-h"><span>Заказ обратного<br /> звонка<span></h2>
+					<div class="popup-form">
+						<form>
+							<div class="input-block">
+								<input type="tel" placeholder="+8 000 000 00 00">
+							</div>
+							<div class="input-block">
+								<button type="submit" class="submit-btn">Перезвоните мне</button>
+							</div>
+						</form>
+					</div>
+				</div>
+
+			</div>
+
+		</div>
+
+	<!-- /Popups -->
 
 		<!-- Content -->
 			<div class="content row">
@@ -896,6 +928,16 @@
 		<script src="js/scripts.js"></script>
 
 		<script type="text/javascript">
+
+			(function($){
+
+				$(window).on("load",function(){
+
+					$(".scroll").mCustomScrollbar();
+
+				});
+
+			})(jQuery);
 
 			$(".promo-slider").on('afterChange', function(event, slick, currentSlide, nextSlide){
 

@@ -1550,14 +1550,15 @@ section.promo-section {
 }
 
 .promo-slider {
-    height: 375px;
+    height: 300px;
     /*overflow: hidden;*/
 }
 
 .promo-slider .slide {    
     width: 100%;
-    height: 375px;
+    height: 300px;
     overflow: hidden;
+    position: relative;
 }
 
 .promo-slider .slide .slide-photo {
@@ -1566,6 +1567,9 @@ section.promo-section {
     height: auto;
     min-width: 100%;
     min-height: 100%;
+    position: absolute;
+    top: 0;
+    right: 0;
 }
 
 /*.promo-slider .slide {
@@ -2567,7 +2571,7 @@ section.promo-section {
 .factory-thumbnail .img-box {
     display: block;
     width: 100%;
-    height: 62px;
+    height: 58px;
     overflow: hidden;
 }
 
@@ -4121,3 +4125,186 @@ footer {
     position: relative;
     top: 6px;
 }
+
+/*-- Popup --*/
+
+.popup-block {
+    /*display: block;*/
+    display: none;
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 3;
+}
+
+.popup-block {
+
+}
+
+.popup-block .mCSB_container.mCS_y_hidden.mCS_no_scrollbar_y {
+    height: 100vh !important;
+}
+
+.popup-bg {
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, .7);
+}
+
+.popup {
+    /*display: block;*/
+    display: none;
+    width: 80%;
+    max-width: 780px;
+    position: relative;
+    z-index: 4;
+    background-color: rgb(255, 255, 255);
+    background-image: url(img/popup_bg.png);
+    background-position: left top;
+    background-repeat: no-repeat;
+    margin: 20px auto;
+    padding: 37px 1% 50px 1%;
+}
+
+.close-popup {
+    display: block;
+    width: 22px;
+    height: 22px;
+    cursor: pointer;
+    background: transparent;
+    border: 1px solid transparent;
+    position: absolute;
+    top: 27px;
+    right: 4%;
+}
+
+.close-popup:before {
+    display: block;
+    content: "\2715";
+    font-family: "PT Serif", Arial, Verdana, serif;
+    font-size: 28px;
+    line-height: 28px;
+    color: #dadada;
+    position: relative;
+    top: -2px;
+    left: -1px;
+
+    -webkit-transition-property: color;
+    -webkit-transition-duration: .3s;
+    -webkit-transition-timing-function: ease;
+
+    -moz-transition-property: color;
+    -moz-transition-duration: .3s;
+    -moz-transition-timing-function: ease;
+
+    -ms-transition-property: color;
+    -ms-transition-duration: .3s;
+    -ms-transition-timing-function: ease;
+
+    -o-transition-property: color;
+    -o-transition-duration: .3s;
+    -o-transition-timing-function: ease;
+
+    transition-property: color;
+    transition-duration: .3s;
+    transition-timing-function: ease;
+}
+
+.close-popup:hover:before {
+    color: #bcbcbc;
+}
+
+.submit-btn {
+    display: inline-block;
+    vertical-align: top;
+    width: 290px;
+    cursor: pointer;
+    padding: 10px 2%;
+    border: 1px solid transparent;
+    background-color: transparent;
+    background-image: url(img/submit_btn_bg.png);
+    background-position: center;
+    background-size: cover;
+    font-family: "PT Serif", Arial, Verdana, serif;
+    font-size: 16px;
+    line-height: 28px;
+    font-weight: 400;
+    color: #00b500;
+}
+
+.popup-h {
+    display: block;
+    width: 100%;
+    text-align: center;
+}
+
+.popup-h span {
+    display: inline-block;
+    vertical-align: middle;
+    font-family: "PT Serif", Arial, Verdana, serif;
+    font-size: 36px;
+    line-height: 40px;
+    font-weight: 400;
+    font-style: normal;
+    color: #373940;
+    text-align: center;
+}
+
+.popup-h:before {
+    display: inline-block;
+    vertical-align: middle;
+    content: "";
+    margin: 0 10px 0 0;
+    width: 60px;
+    height: 4px;
+    background: rgba(0, 181, 0, 1);
+}
+
+.popup-h:after {
+    display: inline-block;
+    vertical-align: middle;
+    content: "";
+    margin: 0 0 0 10px;
+    width: 60px;
+    height: 4px;
+    background: rgba(198, 0, 0, 1);
+}
+
+.popup-content {
+    display: block;
+    width: 68%;
+    margin: 15px 0;
+    float: right;
+    text-align: right;
+}
+
+.popup-form {
+    display: block;
+    width: 290px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.popup-form .input-block {
+    padding: 7px 0 0 0;
+}
+
+.popup-form .input-block input {
+    border: 1px solid #dadada;
+    background: rgba(255, 255, 255, 1);
+    padding: 10px 4%;
+    font-family: "PT Serif", Arial, Verdana, serif;
+    font-size: 18px;
+    line-height: 20px;
+    font-weight: 400;
+    font-style: normal;
+    color: #373940;
+}
+
+
+/*-- /Popup --*/

@@ -49,6 +49,11 @@ $(document).ready(function() {
 
     // -----------------------------------------------
 
+    var popupName;
+    var topOffset;
+
+    // -----------------------------------------------
+
     $(window).resize(function() {
 
 
@@ -59,6 +64,8 @@ $(document).ready(function() {
         // ----------------------------
 
         getCoiceBoxHoverHeight(indexCoiceBox, coiseBoxCount);
+
+        getPopupPosition();
 
         // ----------------------------
 
@@ -386,8 +393,59 @@ $(document).ready(function() {
         $(this).keydown(function(eventObject){
             if (eventObject.which == 27) {
 
-                 $('.search-box, .main-nav').fadeOut(300);
+                 $('.main-nav').fadeOut(300);
                  $(".respmenubtn").removeClass("active");
+
+            }
+
+            if(eventObject.which == 27 && bodyWidth <= 1024) {
+
+                $('.search-box').fadeOut(300);
+
+            }
+
+        });
+
+    });
+
+
+    // ----------------------------------------
+
+    $(function() {
+
+        // var popupName;
+
+        $(".show_popup").click(function(clickEvent) {
+
+            clickEvent.preventDefault();
+
+            popupName = $(this).attr("data-popup-name");
+
+            $(".popup-block").fadeIn(300);
+
+            $(".popup-block .popup[data-popup-name = " + popupName + "]").fadeIn(300);
+
+            getPopupPosition();
+ 
+        });
+
+        $(".popup-bg, .close-popup").click(function() {
+
+            $(".popup-block").fadeOut(300);
+
+            $(".popup-block .popup[data-popup-name = " + popupName + "]").fadeOut(300);
+
+        });
+
+    });
+
+    $(function() {
+
+        $(this).keydown(function(eventObject){
+            if (eventObject.which == 27) {
+                
+                $(".popup-block").fadeOut(300);
+                $(".popup-block .popup").fadeOut(300);
 
              }
         });
@@ -416,6 +474,28 @@ $(document).ready(function() {
                 $(".coice-box:eq("+ indexCoiceBox +")").css({"height" : coiceBoxHoverHeight + "px"});
 
             }
+
+        }
+
+    }
+
+    // -----------------------------
+
+    function getPopupPosition() {
+
+        topOffset = $(window).height() - $(".popup").outerHeight(true);
+
+        if(topOffset > 0) {
+
+            $(".popup-block .popup").css({
+                "top" : topOffset / 2 + "px"
+            });
+
+        } else {
+
+            $(".popup-block .popup").css({
+                "top" : "0px"
+            });
 
         }
 
