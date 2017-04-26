@@ -1562,7 +1562,7 @@ section.promo-section {
 }
 
 .promo-slider .slide .slide-photo {
-    display: block;
+    display: block !important;
     width: auto;
     height: auto;
     min-width: 100%;
@@ -1572,30 +1572,17 @@ section.promo-section {
     right: 0;
 }
 
-/*.promo-slider .slide {
-    background-color: rgb(198, 0, 0);
-    background-image: url(img/slide_bg.jpg);
-    background-position: center;
-    background-size: cover;
-    position: relative;
-    font-size: 0;
-    line-height: 0;
+.promo-slider .slide .slide-photo_resp {
+    /*display: block;*/
+    display: none !important;
+    width: auto;
+    height: auto;
+    min-width: 100%;
+    min-height: 100%;
+    position: absolute;
+    bottom: 0;
+    right: 0;
 }
-
-.promo-slider .slide .col-left {
-    display: inline-block;
-    vertical-align: top;
-    width: 67%;
-    position: relative;
-}
-
-.promo-slider .slide .col-right {
-    display: inline-block;
-    vertical-align: top;
-    width: 33%;
-    position: relative;
-    z-index: 2;
-}*/
 
 .slide-discount {
     width: 128px;
