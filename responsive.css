@@ -416,8 +416,8 @@
 	}*/
 
 	.promo-slider-box .discounts .slide-discount {
-	    top: -27px;
-	    left: 18%;
+	    top: -47px;
+	    left: 16%;
 	    width: 100px;
 	    height: 100px;
 	    margin: 0 0 0 -50px;
@@ -655,6 +655,10 @@
 	    background-image: url(img/slide_bg_resp.jpg);
 	}*/
 
+	.promo-slider .slide .slide-photo {
+	    right: -9%;
+	}
+
 	.good-thumbnail {
 	    width: 40%;
 	}
@@ -863,6 +867,10 @@
 
 	/*-- Main Page --*/
 
+	.promo-slider .slide .slide-photo {
+	    right: -18%;
+	}
+
 	.catalog-nav li {
 	    width: 50%;
 	}
@@ -926,6 +934,10 @@
 @media only screen and (max-width: 350px) {
 
 	/*-- Main Page --*/
+
+	.promo-slider .slide .slide-photo {
+	    right: -33%;
+	}
 
 	.catalog-nav li {
 	    width: 50%;
